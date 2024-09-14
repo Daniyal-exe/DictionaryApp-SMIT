@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "poppins", sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(-45deg, #97cee4, #83aee4, #70aaf1, #5c98e2, #9dc4f5);
+    animation: bg 10s infinite;
+    background-size: 400% 400%;
+    /* background-color: #97cee4; */
+}
+@keyframes bg{
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 100%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
+}
+.container{
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 400px;
+    transition: all .3s;
+}
+h1{
+    margin-bottom: 40px;
+    color: #333;
+}
+.search-box{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+input{
+    padding: 10px;
+    flex: 1;
+    font-family: "poppins", sans-serif;
+    border: none;
+    border-bottom: 2px solid rgb(137, 204, 221);
+    margin-right: 10px;
+}
+input:focus{
+    border-bottom: 2px solid rgb(20, 152, 185);
+    outline: none;
+    transition: all .3s;
+}
+button{
+    padding: 10px;
+    background-color: #55aae2;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: "poppins", sans-serif;
+    transition: ease .3s;
+}
+button:hover{
+    background-color: #429edb;
+}
+#result-box{
+    text-align: left;
+    margin-top: 20px;
+}
+#word{
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+#part-of-speech{
+    font-size: 14px;
+    color: #777;
+    margin-top: 10px;
+    font-style: italic;
+}
+#definition{
+    font-size: 16px;
+    color: #333;
+    margin-top: 20px;
+    border-left: 4px solid rgb(137, 204, 221);
+    padding-left: 5px;
+}
+
+@media (max-width:436px){
+    h1{
+        font-size: 24px;
+    }
+    .container{
+        width: 300px;
+        transition: all .3s;
+    }
+}
+
+@media (max-width:315px){
+    .container{
+        width: 250px;
+        transition: all .3s;
+    }
+    .search-box{
+        flex-wrap: wrap;
+    }
+    input{
+        margin-right: 0;
+    }
+    button{
+        width: 100%;
+        margin-top: 10px;
+    }
+}
