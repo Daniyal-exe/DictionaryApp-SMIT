@@ -102,13 +102,6 @@ button:hover{
         width: 300px;
         transition: all .3s;
     }
-}
-
-@media (max-width:315px){
-    .container{
-        width: 250px;
-        transition: all .3s;
-    }
     .search-box{
         flex-wrap: wrap;
     }
@@ -118,5 +111,12 @@ button:hover{
     button{
         width: 100%;
         margin-top: 10px;
+    }
+}
+
+@media (max-width:315px){
+    .container{
+        width: 250px;
+        transition: all .3s;
     }
 }
