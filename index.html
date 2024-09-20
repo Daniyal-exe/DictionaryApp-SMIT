@@ -4,22 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dictionary App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css"/>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
-        <h1>Dictionary App</h1>
+        <h1>Dictionary</h1>
         <div class="search-box">
             <input type="text" id="search-input" placeholder="Enter a word...">
             <button id="search-button">Search</button>
         </div>
         <div id="result-box">
             <div id="word"></div>
-            <div id="part-of-speech"></div>
-            <div id="definition"></div>
+            <div id="phonetics"></div>
+            <div id="meanings"></div>
+            <div id="synonyms"></div>
+            <div id="antonyms"></div>
+            <div id="origin"></div>
+            <div id="examples"></div>
         </div>
     </div>
 
-    <script src="script.js"></script>
+    <script type="module" src="script.mjs"></script>
 </body>
 </html>
