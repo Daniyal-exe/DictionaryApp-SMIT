@@ -118,8 +118,23 @@ button:hover{
         width: 300px;
     }
 }
+
+@media (max-width:350px){
+    .search-box{
+        flex-wrap: wrap;
+    }
+    input{
+        margin-right: 0;
+    }
+    button{
+        width: 100%;
+        margin-top: 10px;
+    }
+}
+
 @media (max-width:315px){
     .container{
         width: 250px;
+        transition: all .3s;
     }
 }
